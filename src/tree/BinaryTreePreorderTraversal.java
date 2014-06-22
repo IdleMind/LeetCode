@@ -42,6 +42,36 @@ public class BinaryTreePreorderTraversal {
     }
   }
   
+  public static class Solution1 {
+    @SuppressWarnings("unchecked")
+    public List<Integer> preorderTraversal(TreeNode root) {
+      if (root == null) {
+        return Collections.EMPTY_LIST;
+      } else {
+        List<Integer> preorder = new LinkedList<Integer>();
+        LinkedList<TreeNode> stack = new LinkedList<TreeNode>();
+        
+        TreeNode current = root;
+        while (current != null) {
+          preorder.add(current.val);
+          stack.push(current);
+          current = current.left;
+        }
+        while (!stack.isEmpty()) {
+          current = stack.pop();
+          if (current != null) {
+            current = current.right;
+          }
+          while (current != null) {
+            preorder.add(current.val);
+            stack.push(current);
+            current = current.left;
+          }
+        }
+        return preorder;
+      }
+    }
+  }
   public static void main(String[] args) {
     TreeNode root = new TreeNode(5);
     root.left = null;
@@ -49,7 +79,8 @@ public class BinaryTreePreorderTraversal {
     root.right.left = new TreeNode(3);
     root.right.right = null;
     
-    Solution s = new Solution();
+    Solution1 s = new Solution1();
+    
     assert(s.preorderTraversal(root).toString().equals("[5, 4, 3]"));
   }
 }
