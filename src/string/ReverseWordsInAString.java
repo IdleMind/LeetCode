@@ -1,6 +1,5 @@
 package string;
 
-
 /*
  Author:     Tai Zhou, zhoutai603@gmail.com
  Date:       Jun 22, 2013
@@ -9,13 +8,13 @@ package string;
  Source:     https://oj.leetcode.com/problems/reverse-words-in-a-string/
  Difficulty: Easy
 
- Clarification:
- 1. What constitutes a word?
- A sequence of non-space characters constitutes a word.
- 2. Could the input string contain leading or trailing spaces?
- Yes. However, your reversed string should not contain leading or trailing spaces.
- 3. How about multiple spaces between two words?
- Reduce them to a single space in the reversed string.
+ Note:
+ Q1. What constitutes a word?
+ A. A sequence of non-space characters constitutes a word.
+ Q2. Could the input string contain leading or trailing spaces?
+ A. Yes. However, your reversed string should not contain leading or trailing spaces.
+ Q3. How about multiple spaces between two words?
+ A. Reduce them to a single space in the reversed string.
  */
 
 public class ReverseWordsInAString {
