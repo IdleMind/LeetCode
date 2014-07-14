@@ -8,14 +8,11 @@ import java.util.Queue;
   @author     Tai Zhou, zhoutai603@gmail.com
   Date:       Jul 14, 2014
   
-  Problem:    Minimum Depth of Binary Tree
-  Source:     https://oj.leetcode.com/problems/minimum-depth-of-binary-tree/
+  Problem:    Binary Tree Level Order Traversal 
+  Source:     https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
   Difficulty: Easy
   
-  Note:
-  Recursive solution is trivial, could you do it iteratively?
-  
-  Key Idea: DFS or BFS
+  Key Idea:   BFS
 */
 
 public class BinaryTreeLevelOrderTraversal {
