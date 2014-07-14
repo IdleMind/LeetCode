@@ -9,8 +9,8 @@ import java.util.Queue;
   @author     Tai Zhou, zhoutai603@gmail.com
   Date:       Jul 14, 2014
   
-  Problem:    Binary Tree Level Order Traversal 
-  Source:     https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
+  Problem:    Binary Tree Level Order Traversal II
+  Source:     https://oj.leetcode.com/problems/binary-tree-level-order-traversal-ii/
   Difficulty: Easy
   
   Key Idea:   BFS
