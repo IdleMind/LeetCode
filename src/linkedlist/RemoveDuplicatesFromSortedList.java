@@ -8,7 +8,7 @@ package linkedlist;
   Source:     https://oj.leetcode.com/problems/remove-duplicates-from-sorted-list/
   Difficulty: Easy
   
-  Key Idea:   two pointers
+  Key Idea:   two pointers (from Cracking the Coding Interview 150)
 */
 
 public class RemoveDuplicatesFromSortedList {
