@@ -66,3 +66,20 @@ public class FlattenBinaryTreeToLinkedList {
     }
   }
 }
+
+/*
+  A in-place solution in the discuss page.
+  Combine list iteration and preorder traversal for trees.
+  Iterating the list during the generation.
+  
+  while ( root ) {
+      if ( root->left ) {
+          TreeNode *ptr = root->left;
+          while ( ptr->right ) ptr = ptr->right;
+          ptr->right = root->right;
+          root->right = root->left;
+          root->left = NULL;
+      }
+      root = root->right;
+  }
+ */
