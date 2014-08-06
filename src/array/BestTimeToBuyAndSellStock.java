@@ -14,6 +14,7 @@ package array;
 public class BestTimeToBuyAndSellStock {
   public static class Solution {
     public int maxProfit(int[] prices) {
+      // special cases
       if (prices == null || prices.length <= 1) {
         return 0;
       }
